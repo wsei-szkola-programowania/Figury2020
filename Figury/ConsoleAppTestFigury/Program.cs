@@ -5,7 +5,22 @@ namespace ConsoleAppTestFigury
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static void Main()
+        {
+            Punkt a = new Punkt(1, 2);
+            Punkt b = new Punkt(3, 4);
+            Odcinek o = new Odcinek(a, b);
+            Console.WriteLine( o );
+            Console.WriteLine( o.DlugoscJakoFunkcja() );
+            Console.WriteLine( o.Dlugosc );
+
+            Odcinek o1 = new Odcinek(b, a);
+            Console.WriteLine( o == o1 ); // false
+            Console.WriteLine( o.Equals(o1) ); // true, bo zdefiniowane Equals
+        }
+
+        static void Main1(string[] args)
         {
             Console.WriteLine("Hello World!");
             Punkt a = new Punkt();
