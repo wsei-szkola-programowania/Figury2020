@@ -21,25 +21,6 @@ namespace FirutyLib
             this.y = y;
         }
 
-        public override bool Equals(object obj)
-        {
-            if (obj is Punkt)
-                return this.Equals((Punkt)obj);
-            else
-                return false;
-        }
-
-
-        public bool Equals(Punkt other)
-        {
-            if (other == null) return false;
-
-            if (this.x == other.x && this.y == other.y)
-                return true;
-            else
-                return false;            
-        }
-
         #endregion
 
 
@@ -56,7 +37,23 @@ namespace FirutyLib
             return $"Punkt({x}, {y})";
         }
 
-        
+        public override bool Equals(object obj)
+        {
+            if (obj is Punkt)
+                return this.Equals((Punkt)obj);
+            else
+                return false;
+        }
+
+        public bool Equals(Punkt other)
+        {
+            if (other == null) return false;
+
+            if (this.x == other.x && this.y == other.y)
+                return true;
+            else
+                return false;
+        }
 
         #endregion
     }
