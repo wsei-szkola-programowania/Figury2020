@@ -2,11 +2,34 @@
 
 namespace FirutyLib
 {
+    /// <summary>
+    /// Punkt na płaszczyźnie w wariancie mutable
+    /// reprezentowany przez liczbę rzeczywistą zaokrągloną do 2 miejsc po przecinku
+    /// </summary>
     public class Punkt : IEquatable<Punkt>
     {
         #region stan -> pola, właściwości
-        public double x;
-        public double y;
+        private double x;
+        public double X // read-write do x
+        {
+            get
+            {
+                return x;
+            }
+            set
+            {
+                x =  Math.Round(value, 2);
+            }
+        }
+
+
+        private double y;
+        public double Y
+        {
+            get => y;
+            set => y = Math.Round(value, 2);
+        }
+
         #endregion
 
         #region konstrukcja -> konstruktory
@@ -17,8 +40,8 @@ namespace FirutyLib
 
         public Punkt( double x, double y )
         {
-            this.x = x;
-            this.y = y;
+            this.X = x;
+            this.Y = y;
         }
 
         #endregion
@@ -28,8 +51,8 @@ namespace FirutyLib
 
         public void Przesun(double dx, double dy)
         {
-            x = x + dx; // x += dx
-            y = y + dy; // y += dy
+            X = x + dx; // x += dx
+            Y = y + dy; // y += dy
         }
 
         public override string ToString()
@@ -53,6 +76,14 @@ namespace FirutyLib
                 return true;
             else
                 return false;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1502939027;
+            hashCode = hashCode * -1521134295 + x.GetHashCode();
+            hashCode = hashCode * -1521134295 + y.GetHashCode();
+            return hashCode;
         }
 
         #endregion

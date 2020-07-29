@@ -20,7 +20,9 @@ namespace ConsoleAppTestFigury
             Punkt c = new Punkt(0, 0);
             Console.WriteLine(b == c); // referencyjne równa się
             Console.WriteLine( b.Equals(c) ); // równość Equals
-
+            a.X = 10.54238658; //wykonanie `set`
+            a.Y = -1.2345;
+            Console.WriteLine( a );
         }
     }
 }
