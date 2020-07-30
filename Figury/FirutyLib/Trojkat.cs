@@ -55,7 +55,14 @@ namespace FirutyLib
                 double a = bok1.Dlugosc;
                 double b = bok2.Dlugosc;
                 double c = bok3.Dlugosc;
-                if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+                if (
+                     Math.Round( a*a + b*b - c*c, 4) == 0      // a * a + b * b == c * c 
+                    ||
+                     Math.Round( a * a + c * c - b * b, 4) == 0 
+                    || 
+                     Math.Round( b * b + c * c - a * a, 4) == 0
+                   )
+
                     return true;
                                 
                 return false;
