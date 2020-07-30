@@ -27,8 +27,8 @@ namespace FirutyLib
             bok3 = new Odcinek(C, A);
         }
 
-        public Trojkat() : this( new Punkt(0,0), new Punkt(0,1), new Punkt(1,0) ) // łańcuchowanie konstruktorów
-        { 
+        public Trojkat() : this(new Punkt(0, 0), new Punkt(0, 1), new Punkt(1, 0)) // łańcuchowanie konstruktorów
+        {
 
         }
 
@@ -56,15 +56,14 @@ namespace FirutyLib
                 double b = bok2.Dlugosc;
                 double c = bok3.Dlugosc;
                 if (
-                     Math.Round( a*a + b*b - c*c, 4) == 0      // a * a + b * b == c * c 
+                     Math.Round(a * a + b * b - c * c, 4) == 0      // a * a + b * b == c * c 
                     ||
-                     Math.Round( a * a + c * c - b * b, 4) == 0 
-                    || 
-                     Math.Round( b * b + c * c - a * a, 4) == 0
+                     Math.Round(a * a + c * c - b * b, 4) == 0
+                    ||
+                     Math.Round(b * b + c * c - a * a, 4) == 0
                    )
-
                     return true;
-                                
+
                 return false;
             }
         }

@@ -6,7 +6,31 @@ namespace ConsoleAppTestFigury
     class Program
     {
 
+
         static void Main()
+        {
+            Kolo k = new Kolo();
+            Console.WriteLine(k);
+        }
+
+        static void Main4()
+        {
+            Okrag o = new Okrag();
+            Console.WriteLine(o);
+
+            Okrag o1 = new Okrag(new Punkt(1, 1), 3);
+            Console.WriteLine(o1);
+
+            Okrag o2 = new Okrag(new Punkt(-1, -1));
+            Console.WriteLine(o2);
+            o2.Srodek = new Punkt(0, 0);
+            Console.WriteLine(o2);
+            o2.Promien = -10; //???
+
+            //Okrag o3 = new Okrag(new Punkt(0, 0), -5); // exception
+        }
+
+        static void Main3()
         {
             Trojkat t = new Trojkat();
             Console.WriteLine( t );
