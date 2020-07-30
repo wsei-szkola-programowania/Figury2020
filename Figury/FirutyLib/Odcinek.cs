@@ -33,7 +33,7 @@ namespace FirutyLib
         public double DlugoscJakoFunkcja()
         {
             //throw new NotImplementedException();
-            return Math.Sqrt( Math.Pow(Poczatek.X-Koniec.X, 2) + Math.Pow(Poczatek.Y - Koniec.Y, 2));
+            return Math.Round(Math.Sqrt(Math.Pow(Poczatek.X - Koniec.X, 2) + Math.Pow(Poczatek.Y - Koniec.Y, 2)), 4);
         }
 
         //public double Dlugosc
@@ -44,7 +44,8 @@ namespace FirutyLib
         //    }
         //}
 
-        public double Dlugosc => Math.Sqrt(Math.Pow(Poczatek.X - Koniec.X, 2) + Math.Pow(Poczatek.Y - Koniec.Y, 2));
+        public double Dlugosc => 
+            Math.Round(Math.Sqrt(Math.Pow(Poczatek.X - Koniec.X, 2) + Math.Pow(Poczatek.Y - Koniec.Y, 2)), 4);
 
         // Dwa odcinki są takie same, jeśli mają takie same początki i końce (z dokładności do kolejności)
         public bool Equals(Odcinek other)
