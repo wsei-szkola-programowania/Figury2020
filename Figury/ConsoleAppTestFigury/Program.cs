@@ -8,6 +8,19 @@ namespace ConsoleAppTestFigury
 
         static void Main()
         {
+            Trojkat t = new Trojkat();
+            Console.WriteLine( t );
+            Console.WriteLine( $"Trójkąt jest prostokątny: {t.JestProstokatny}");
+
+            Trojkat t1;
+            t1 = new Trojkat(new Punkt(0, 1), new Punkt(1, 1), new Punkt(-1, 1));
+            Console.WriteLine( t1 );
+            Console.WriteLine($"Trójkąt jest prostokątny: {t1.JestProstokatny}");
+        }
+
+
+        static void Main2()
+        {
             Punkt a = new Punkt(1, 2);
             Punkt b = new Punkt(3, 4);
             Odcinek o = new Odcinek(a, b);
