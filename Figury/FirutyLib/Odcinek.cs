@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Odcinek : Figura, IEquatable<Odcinek>
+    public class Odcinek : Figura, IEquatable<Odcinek>, IMierzalna1D
     {
         // dane, stan
         public Punkt Poczatek { get; set; }  //automatic property
@@ -68,6 +68,14 @@ namespace FirutyLib
         {
             Poczatek.Przesun(dx, dy);
             Koniec.Przesun(dx, dy);
+        }
+
+        public void Skaluj(double wsp)
+        {
+            if( wsp <= 0 )
+                throw new ArgumentException("współczynnik skalowania musi być dodatni");
+
+            throw new NotImplementedException("do opracowania");
         }
     }
 }

@@ -5,9 +5,24 @@ namespace ConsoleAppTestFigury
 {
     class Program
     {
-
-
         static void Main()
+        {
+            // testowanie łamanej
+            Lamana l1 = new Lamana();
+            Console.WriteLine(l1);
+            Punkt[] tab = new Punkt[4];
+            tab[0] = new Punkt(-1, -1);
+            tab[1] = new Punkt(0, 5);
+            tab[2] = new Punkt(1, 3);
+            tab[3] = new Punkt(3, 3);
+            Lamana l2 = new Lamana(tab);
+            Console.WriteLine(l2);
+            l2.DodajNaKoniec(new Punkt(10, 10));
+            l2.DodajNaPozycji(0, new Punkt(0, 0));
+            Console.WriteLine(l2);
+        }
+
+        static void Main5()
         {
             Kolo k = new Kolo();
             Console.WriteLine(k);

@@ -9,9 +9,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="FirutyLib.Odcinek" Collapsed="true">
-    <Position X="4" Y="3.75" Width="1.5" />
+    <Position X="4" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAgAAAAAAAAEgAAAAAAABAAAAAAAAAQACAAAAAA=</HashCode>
+      <HashCode>AEAAAAgAAAAAAAAEgAAAAAAABAAAAAAAAAQACAIAAAA=</HashCode>
       <FileName>Odcinek.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -46,20 +46,49 @@
       <FileName>Figura.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FirutyLib.Kwadrat" Collapsed="true">
+  <Class Name="FirutyLib.Kwadrat">
     <Position X="11.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAABAEAAAAAgAAAAIEAAAAABAAAAAAAAA=</HashCode>
       <FileName>Kwadrat.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FirutyLib.Prostokat" Collapsed="true">
-    <Position X="11.5" Y="5" Width="1.5" />
+    <Position X="11.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAABAAAAAAAAEAAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
       <FileName>Prostokat.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FirutyLib.Lamana" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAADAAAAEQAAEABAAAAAEQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lamana.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FirutyLib.IMierzalna">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>IMierzalna.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FirutyLib.IMierzalna1D">
+    <Position X="14.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMierzalna.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FirutyLib.IMierzalna2D" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>IMierzalna.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="FirutyLib.Kolor" Collapsed="true">
     <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
