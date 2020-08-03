@@ -42,7 +42,7 @@ namespace FirutyLib
             Srodek.Przesun(dx, dy);
         }
 
-        public double Obwod => Math.Round(4 * Bok, 4);
+        virtual public double Obwod => Math.Round(4 * Bok, 4);
 
         public double Pole => Math.Round(Bok * Bok, 4);
     }

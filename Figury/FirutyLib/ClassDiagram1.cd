@@ -53,6 +53,13 @@
       <FileName>Kwadrat.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FirutyLib.Prostokat" Collapsed="true">
+    <Position X="11.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAAAEAAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Prostokat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="FirutyLib.Kolor" Collapsed="true">
     <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
