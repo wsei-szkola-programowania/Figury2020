@@ -46,6 +46,13 @@
       <FileName>Figura.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="FirutyLib.Kwadrat" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAABAEAAAAAgAAAAIEAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Kwadrat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="FirutyLib.Kolor" Collapsed="true">
     <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
