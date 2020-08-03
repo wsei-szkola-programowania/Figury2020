@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Trojkat
+    public class Trojkat : Figura
     {
         // dane -> stan
         public Punkt A { get; set; }
@@ -35,6 +35,14 @@ namespace FirutyLib
         // metody -> zachowanie
 
         public override string ToString() => $"Trojkat({A}, {B}, {C})";
+
+        public override void Przesun(double dx, double dy)
+        {
+            A.Przesun(dx, dy);
+            B.Przesun(dx, dy);
+            C.Przesun(dx, dy);
+        }
+
         //{
         //    return $"Trojkat({A}, {B}, {C})";
         //}

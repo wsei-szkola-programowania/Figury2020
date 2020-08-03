@@ -6,7 +6,7 @@ namespace FirutyLib
     /// Punkt na płaszczyźnie w wariancie mutable
     /// reprezentowany przez liczbę rzeczywistą zaokrągloną do 2 miejsc po przecinku
     /// </summary>
-    public class Punkt : IEquatable<Punkt>
+    public class Punkt : Figura, IEquatable<Punkt>
     {
         #region stan -> pola, właściwości
         private double x;
@@ -49,7 +49,7 @@ namespace FirutyLib
 
         #region zachowanie -> właściwości, metody
 
-        public void Przesun(double dx, double dy)
+        override public void Przesun(double dx, double dy)
         {
             X = x + dx; // x += dx
             Y = y + dy; // y += dy

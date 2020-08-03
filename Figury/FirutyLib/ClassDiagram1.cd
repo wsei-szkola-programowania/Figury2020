@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="FirutyLib.Punkt" Collapsed="true">
+  <Class Name="FirutyLib.Punkt">
     <Position X="1.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAABgAAAAYAA=</HashCode>
@@ -9,9 +9,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="FirutyLib.Odcinek" Collapsed="true">
-    <Position X="4" Y="3.25" Width="1.5" />
+    <Position X="4" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAAAAAAAAEgAAAAAAABAAAAAAAAAQACAAAAAA=</HashCode>
+      <HashCode>AEAAAAgAAAAAAAAEgAAAAAAABAAAAAAAAAQACAAAAAA=</HashCode>
       <FileName>Odcinek.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -19,25 +19,39 @@
   <Class Name="FirutyLib.Trojkat" Collapsed="true">
     <Position X="6.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAADAAQAEAAAAAAAAAAAAAAAAABAIoAEAAAA=</HashCode>
+      <HashCode>AEAAAAAAAADAAQAEAAAAAAAAAAAAAAAAABAIoAEAAAA=</HashCode>
       <FileName>Trojkat.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FirutyLib.Okrag" Collapsed="true">
+  <Class Name="FirutyLib.Okrag">
     <Position X="9" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgQAAAAABAEgAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>AEAAAAgQAAAAABAEgAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Okrag.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="FirutyLib.Kolo" Collapsed="true">
-    <Position X="9" Y="5" Width="1.5" />
+    <Position X="9" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
       <FileName>Kolo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="FirutyLib.Figura">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Figura.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FirutyLib.Kolor" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAABAAAQAAAICAAAA=</HashCode>
+      <FileName>Figura.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Okrag : IEquatable<Okrag>
+    public class Okrag : Figura, IEquatable<Okrag>
     {
         public Punkt Srodek { get; set; }
 
@@ -41,6 +41,11 @@ namespace FirutyLib
             if (other is null) return false;
 
             return (this.Srodek.Equals(other.Srodek) && this.Promien.Equals(other.Promien));
+        }
+
+        public override void Przesun(double dx, double dy)
+        {
+            Srodek.Przesun(dx, dy);
         }
 
         public double Dlugosc => Math.Round( 2 * Math.PI * Promien, 4);

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Odcinek : IEquatable<Odcinek>
+    public class Odcinek : Figura, IEquatable<Odcinek>
     {
         // dane, stan
         public Punkt Poczatek { get; set; }  //automatic property
@@ -62,6 +62,12 @@ namespace FirutyLib
             }
 
             return false;
+        }
+
+        public override void Przesun(double dx, double dy)
+        {
+            Poczatek.Przesun(dx, dy);
+            Koniec.Przesun(dx, dy);
         }
     }
 }
