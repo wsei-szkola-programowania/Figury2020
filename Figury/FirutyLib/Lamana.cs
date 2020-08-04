@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Lamana : Figura
+    public class Lamana : Figura, IMierzalna1D
     {
         //Punkt[] punkty; // tablica punktów - niewygodne
         private List<Punkt> punkty;
@@ -19,7 +19,7 @@ namespace FirutyLib
             kolor = Kolor.zielony;
         }
 
-        public Lamana( Punkt[] ciagPunktow )
+        public Lamana( params Punkt[] ciagPunktow )
         {
             kolor = Kolor.zielony;
             if ( ciagPunktow.Length < 2 )
@@ -44,6 +44,29 @@ namespace FirutyLib
 
         public int LiczbaPunktów => punkty.Count;
 
+        public double Dlugosc
+        {
+            get
+            {
+                List<Odcinek> odcinki = new List<Odcinek>();
+                Punkt poczatek = punkty[0];
+                Punkt koniec = punkty[1];
+                odcinki.Add(new Odcinek(poczatek, koniec));
+                for(int i=1; i < punkty.Count-1; i++)
+                {
+                    poczatek = punkty[i];
+                    koniec = punkty[i + 1];
+                    odcinki.Add(new Odcinek(poczatek, koniec));
+                }
+                double suma = 0;
+                foreach(var odc in odcinki)
+                {
+                    suma += odc.Dlugosc;
+                }
+                return suma;
+            }
+        }
+
         public override string ToString()
         {
             string napis ="Łamana(";
@@ -63,6 +86,11 @@ namespace FirutyLib
             {
                 p.Przesun(dx, dy);
             }
+        }
+
+        public void Skaluj(double wsp)
+        {
+            throw new NotImplementedException();
         }
     }
 }

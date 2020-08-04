@@ -36,5 +36,14 @@ namespace FirutyLib
         public override double Obwod => Math.Round( 2*Bok + 2*DrugiBok, 4);
 
         public new double Pole => Math.Round(Bok * DrugiBok, 4);
+
+        public new void Skaluj(double wsp)
+        {
+            if (wsp <= 0)
+                throw new ArgumentException("współczynnik nie może być ujemny");
+
+            Bok *= wsp;
+            DrugiBok *= wsp;
+        }
     }
 }

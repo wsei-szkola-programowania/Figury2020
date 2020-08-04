@@ -5,8 +5,25 @@ namespace ConsoleAppTestFigury
 {
     class Program
     {
+        static int Minimum( params int[] dane )
+        {
+            int min = dane[0]; // int.MaxValue;
+            for(int i=1; i<dane.Length; i++)
+            {
+                if (dane[i] < min)
+                    min = dane[i];
+            }
+            return min;
+        }
+
+
         static void Main()
         {
+            // testowanie Minimum
+            int[] dane = new int[] { 5, 3, 1, 7, 2 }; //lista inicjalizacyjna
+            Console.WriteLine( Minimum(dane) );
+            Console.WriteLine( Minimum(5, 3, 1, 7, 2) );
+
             // testowanie łamanej
             Lamana l1 = new Lamana();
             Console.WriteLine(l1);
@@ -20,6 +37,10 @@ namespace ConsoleAppTestFigury
             l2.DodajNaKoniec(new Punkt(10, 10));
             l2.DodajNaPozycji(0, new Punkt(0, 0));
             Console.WriteLine(l2);
+
+            Lamana l3 = new Lamana(tab[0], new Punkt(0, 0), tab[3], new Punkt(1, 1));
+            Console.WriteLine(l3);
+            Console.WriteLine( l3.Dlugosc );
         }
 
         static void Main5()

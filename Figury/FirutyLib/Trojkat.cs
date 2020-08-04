@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FirutyLib
 {
-    public class Trojkat : Figura
+    public class Trojkat : Figura, IMierzalna2D
     {
         // dane -> stan
         public Punkt A { get; set; }
@@ -43,6 +43,11 @@ namespace FirutyLib
             C.Przesun(dx, dy);
         }
 
+        public void Skaluj(double wsp)
+        {
+            throw new NotImplementedException();
+        }
+
         //{
         //    return $"Trojkat({A}, {B}, {C})";
         //}
@@ -75,5 +80,16 @@ namespace FirutyLib
                 return false;
             }
         }
+
+        public double Pole // Wzór Herona
+        {
+            get
+            {
+                double p = Obwod / 2;
+                return Math.Sqrt(p * (p - bok1.Dlugosc) * (p - bok2.Dlugosc) * (p - bok3.Dlugosc));
+            }            
+        }
+
+        public double Dlugosc => Obwod;
     }
 }

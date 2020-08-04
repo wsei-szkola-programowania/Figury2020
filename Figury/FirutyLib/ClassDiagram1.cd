@@ -19,9 +19,10 @@
   <Class Name="FirutyLib.Trojkat" Collapsed="true">
     <Position X="6.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAADAAQAEAAAAAAAAAAAAAAAAABAIoAEAAAA=</HashCode>
+      <HashCode>AEAAAAAAAADAAQAEAAAAAAAAAAAEAAAAABAIoAMAAAA=</HashCode>
       <FileName>Trojkat.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="FirutyLib.Okrag">
     <Position X="9" Y="3.25" Width="1.5" />
@@ -49,7 +50,7 @@
   <Class Name="FirutyLib.Kwadrat">
     <Position X="11.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAABAEAAAAAgAAAAIEAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AEAAAAgAAAAAABAEAAAAAgAAAAIEAAAAABAAAAIAAAA=</HashCode>
       <FileName>Kwadrat.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -57,16 +58,17 @@
   <Class Name="FirutyLib.Prostokat" Collapsed="true">
     <Position X="11.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAABAAAAAAAAEAAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AEAAAABAAAAAAAAEAAAAAAAAAAAEAAAAABAAAAIAAAA=</HashCode>
       <FileName>Prostokat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FirutyLib.Lamana" Collapsed="true">
     <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAADAAAAEQAAEABAAAAAEQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AEAAAAjAAAAEQAAEABAAAAAEQAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Lamana.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Interface Name="FirutyLib.IMierzalna">
     <Position X="14.75" Y="0.5" Width="1.5" />
@@ -82,8 +84,8 @@
       <FileName>IMierzalna.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="FirutyLib.IMierzalna2D" Collapsed="true">
-    <Position X="14.75" Y="4.5" Width="1.5" />
+  <Interface Name="FirutyLib.IMierzalna2D">
+    <Position X="14.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAA=</HashCode>
       <FileName>IMierzalna.cs</FileName>
